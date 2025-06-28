@@ -16,14 +16,14 @@ func Test_Stack(t *testing.T) {
 	})
 }
 
-func testCallers() *stack {
+func testCallers() *Stack {
 	// для тестирования формата нам нужна только одна запись в стеке
 	const depth = 1
 	var pcs [depth]uintptr
 
 	// для работы тестов пропускаем не три, а два вызова
 	n := runtime.Callers(2, pcs[:])
-	var st stack = pcs[0:n]
+	var st Stack = pcs[0:n]
 	return &st
 }
 
