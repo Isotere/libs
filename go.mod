@@ -3,6 +3,7 @@ module github.com/Isotere/libs
 go 1.24.4
 
 require (
+	github.com/joho/godotenv v1.5.1
 	github.com/stretchr/testify v1.10.0
 	go.uber.org/zap v1.27.0
 )
