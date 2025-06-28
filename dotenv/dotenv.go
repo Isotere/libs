@@ -1,19 +1,19 @@
 package dotenv
 
 import (
+	"fmt"
 	"os"
 	"strconv"
 
 	"github.com/joho/godotenv"
-
-	"github.com/Isotere/libs/errors"
 )
 
 // Load auto-load env variables from .env file in the root of project
 func Load(filenames ...string) error {
 	err := godotenv.Load(filenames...)
+
 	if err != nil {
-		return errors.Wrap(err, "Error loading .env file")
+		return fmt.Errorf("error loading .env file: %w", err)
 	}
 
 	return nil
