@@ -9,7 +9,7 @@ import (
 )
 
 func Test_Stack(t *testing.T) {
-	stackTraceTest := Callers()
+	stackTraceTest := Callers(defaultCallStackPosition)
 
 	t.Run("stack depth", func(t *testing.T) {
 		assert.Equal(t, 2, len(stackTraceTest.StackTrace()))
