@@ -2,6 +2,10 @@
 
 [Changelog format](https://keepachangelog.com/en/1.0.0/)
 
+[0.0.6] - 2025-07-01
+
+- fix logger console writer (remove arg)
+
 [0.0.5] - 2025-06-30
 
 - replace zap in logger with standard logger and change contract

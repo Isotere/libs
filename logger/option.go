@@ -20,7 +20,7 @@ func WithWriter(w io.Writer) Option {
 	}
 }
 
-func WithConsoleWriter(w io.Writer) Option {
+func WithConsoleWriter() Option {
 	return WithWriter(os.Stdout)
 }
 
